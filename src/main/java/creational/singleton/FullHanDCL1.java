@@ -3,7 +3,7 @@ package creational.singleton;
 
 /**
  * 饱汉DCL（Double Check Lock） 1.0
- * 线性不安全
+ * 线性不安全，因为指令重排序
  */
 public class FullHanDCL1 {
     private static FullHanDCL1 singleton = null;
