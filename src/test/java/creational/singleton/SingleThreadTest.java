@@ -13,4 +13,12 @@ class SingleThreadTest {
         assertEquals(s1, s2);
     }
 
+    @Test
+    void FullHan1Test() {
+        FullHanBasic s1, s2;
+        s1 = FullHanBasic.getInstance();
+        s2 = FullHanBasic.getInstance();
+        assertEquals(s1, s2);
+    }
+
 }
