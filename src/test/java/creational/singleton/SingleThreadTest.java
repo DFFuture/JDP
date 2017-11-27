@@ -21,4 +21,12 @@ class SingleThreadTest {
         assertEquals(s1, s2);
     }
 
+    @Test
+    void SingletonBasicTest() {
+        SingletonBasic s1, s2;
+        s1 = SingletonBasic.SINGLETON;
+        s2 = SingletonBasic.SINGLETON;
+        assertEquals(s1, s2);
+    }
+
 }
