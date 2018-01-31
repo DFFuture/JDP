@@ -6,12 +6,12 @@ public class XMLUtil {
     public  static Object getBean() {
         try {
             //创建文档对象
-            DocumentBuilderFactory  dFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder  builder = dFactory.newDocumentBuilder();
+            DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = dFactory.newDocumentBuilder();
             Document doc;
             doc = builder.parse("config.xml");
             //获取包含类名的文本节点
-            NodeList  nl = doc.getElementsByTagName("className");
+            NodeList nl = doc.getElementsByTagName("className");
             Node classNode = nl.item(0).getFirstChild();
             String cName = classNode.getNodeValue();
 

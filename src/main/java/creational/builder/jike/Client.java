@@ -1,7 +1,7 @@
 package creational.builder.jike;
 
 public class Client {
-    public  static void main(String args[]) {
+    public static void main(String args[]) {
         ActorBuilder ab; //针对抽象建造者编程
         ab =  (ActorBuilder)XMLUtil.getBean(); //反射生成具体建造者对象
         ActorController ac = new  ActorController();
